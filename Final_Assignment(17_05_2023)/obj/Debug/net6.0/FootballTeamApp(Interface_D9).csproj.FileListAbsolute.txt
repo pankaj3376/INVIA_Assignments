@@ -1,0 +1,15 @@
+C:\Users\InviaILC\source\repos\Day9_Interface(17_05_2023)\obj\Debug\net6.0\FootballTeamApp(Interface_D9).csproj.AssemblyReference.cache
+C:\Users\InviaILC\source\repos\Day9_Interface(17_05_2023)\obj\Debug\net6.0\FootballTeamApp(Interface_D9).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\InviaILC\source\repos\Day9_Interface(17_05_2023)\obj\Debug\net6.0\FootballTeamApp(Interface_D9).AssemblyInfoInputs.cache
+C:\Users\InviaILC\source\repos\Day9_Interface(17_05_2023)\obj\Debug\net6.0\FootballTeamApp(Interface_D9).AssemblyInfo.cs
+C:\Users\InviaILC\source\repos\Day9_Interface(17_05_2023)\obj\Debug\net6.0\FootballTeamApp(Interface_D9).csproj.CoreCompileInputs.cache
+C:\Users\InviaILC\source\repos\Day9_Interface(17_05_2023)\bin\Debug\net6.0\FootballTeamApp(Interface_D9).exe
+C:\Users\InviaILC\source\repos\Day9_Interface(17_05_2023)\bin\Debug\net6.0\FootballTeamApp(Interface_D9).deps.json
+C:\Users\InviaILC\source\repos\Day9_Interface(17_05_2023)\bin\Debug\net6.0\FootballTeamApp(Interface_D9).runtimeconfig.json
+C:\Users\InviaILC\source\repos\Day9_Interface(17_05_2023)\bin\Debug\net6.0\FootballTeamApp(Interface_D9).dll
+C:\Users\InviaILC\source\repos\Day9_Interface(17_05_2023)\bin\Debug\net6.0\FootballTeamApp(Interface_D9).pdb
+C:\Users\InviaILC\source\repos\Day9_Interface(17_05_2023)\obj\Debug\net6.0\FootballTeamApp(Interface_D9).dll
+C:\Users\InviaILC\source\repos\Day9_Interface(17_05_2023)\obj\Debug\net6.0\refint\FootballTeamApp(Interface_D9).dll
+C:\Users\InviaILC\source\repos\Day9_Interface(17_05_2023)\obj\Debug\net6.0\FootballTeamApp(Interface_D9).pdb
+C:\Users\InviaILC\source\repos\Day9_Interface(17_05_2023)\obj\Debug\net6.0\FootballTeamApp(Interface_D9).genruntimeconfig.cache
+C:\Users\InviaILC\source\repos\Day9_Interface(17_05_2023)\obj\Debug\net6.0\ref\FootballTeamApp(Interface_D9).dll
