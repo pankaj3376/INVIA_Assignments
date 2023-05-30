@@ -1,0 +1,147 @@
+
+
+
+using System;
+
+class program
+{
+    public static void Main(string[] args)
+    {
+	//======================== Func ==============================================
+        //Func is generic delegate present in System namespace.
+        //It takes one or more input parameters and returns one out parameter.
+        //The last parameter is considered as a return value.
+        Func<int,int,int> func1 = (int x,int y) => x*y; // Func Delegate must have return type 
+        int value = func1(10,20); 
+        Console.WriteLine(value);
+
+	//======================== Action ==============================================
+        //Action is a generic delegate present in System namespace.
+        //It takes one or more input parameters and returns nothing.
+        Action<string,int,string> action1 = (string a,int b, string c) => Console.WriteLine(a+" "+b+" "+c);
+        action1("Pankaj",25,"noida");
+
+	
+	//======================== Predicate ==============================================
+        //Predicate delegate is also inbuilt generic delegate and is present in System namespace.
+        //It is used to verify certain criteria of method and returns output as Boolean, either True or False.
+
+        Predicate<int> predicate = (int x) => x>9;
+        bool result = predicate(10);
+        Console.WriteLine(result);
+    }
+}
+
+//============================================ Anonymous Method, Lamda Expression, Callback ========================================
+
+/*
+	Anonymous Method : 
+			  An anonymous method is a method which doesn’t contain any name which is introduced in C# 2.0. 
+			  It is useful when the user wants to create an inline method and also wants to pass parameter in 
+			  the anonymous method like other methods. An Anonymous method is defined using the delegate keyword and 
+			  the user can assign this method to a variable of the delegate type.
+
+*/
+
+class anonymousMetod
+{
+    public delegate void MyDelegate(string name);
+    public static void Main()
+    {
+        MyDelegate del = delegate (string name)
+        {
+            Console.WriteLine($"Hello {name}");
+        };
+
+        del.Invoke("Sandeep");
+    }
+
+}
+
+
+/*
+	Callback :
+		  A "callback" is a term that refers to a coding design pattern. In this design pattern executable code is passed as an argument 
+		  to other code and it is expected to call back at some time. This callback can be synchronous or asynchronous. 
+		  So, in this way large piece of the internal behavior of a method from the outside of a method can be controlled. 
+		  It is basically a function pointer that is being passed into another function.
+
+		  Delegate is a famous way to implement Callback in C#.  But, it can also be implemented by Interface.
+*/
+
+
+public delegate void TaskCallBack(string taskResult);
+public class CallBack
+{
+    public void StartNewTask(TaskCallBack taskCallBack)
+    {
+        Console.WriteLine("I have started new Task.");
+        if (taskCallBack != null)
+        {
+            taskCallBack("I have completed Task.");
+        }
+    }
+}
+
+public class Test
+{
+    public void CallBack()
+    {
+        TaskCallBack callback = TestCallBack;
+        CallBack testCallBack = new CallBack();
+        testCallBack.StartNewTask(callback);
+    }
+    public void TestCallBack(string result)
+    {
+        Console.WriteLine(result);
+    }
+}
+
+class result
+{
+    static void Main(string[] args)
+    {
+        Test callBackTest = new Test();
+        callBackTest.CallBack();
+        Console.ReadLine();
+    }
+}
+
+
+/*
+	Lamda Expression :
+			  Lambda expressions are anonymous functions that contain expressions or sequence of operators.
+			  The lambda operator => divides a lambda expression into two parts. The left side is the input 
+			  parameter and the right side is the lambda body.
+
+*/
+
+
+using System;  
+using System.Collections.Generic;  
+using System.Linq; 
+ 
+public static class demo  
+{  
+    public static void Main()  
+    {  
+        List<int> list = new List<int>() { 1, 2, 3, 4, 5, 6 };  
+        List<int> evenNumbers = list.FindAll(x => (x % 2) == 0);  
+  
+        foreach (var num in evenNumbers)  
+        {  
+            Console.Write("{0} ", num);  
+        }  
+        Console.WriteLine();
+  
+    }  
+}
+
+
+
+
+
+
+
+
+
